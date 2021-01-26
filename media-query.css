@@ -1,0 +1,68 @@
+/* TABLET */ 
+@media screen and (max-width: 850px) {
+    body {
+        height: 100%;
+        overflow-y: auto;
+        padding: 2rem;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 100%;
+        height: 90vh;
+    }
+    .content {
+        display: block;
+    }
+    .content-portfolio,
+    .content-resume,
+    .content-blog,
+    .content-contact {
+        height: 100%;
+    }
+
+    nav {
+        position: fixed;
+        top: 2rem;
+        left: 2rem;
+        z-index: 11;
+    }
+
+    .all {
+        margin-left: 8rem;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+    nav {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid var(--orange);
+    }
+
+    nav ul {
+        width: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    nav ul li:not(:last-child) {
+        border-right: 1px solid #eee;
+    }
+
+    .all {
+        margin: 0 auto;
+        padding-top: 7.2rem;
+    }
+}
